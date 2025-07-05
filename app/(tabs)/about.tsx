@@ -2,17 +2,17 @@ import { Text } from "@/components/Text";
 import { Link } from "expo-router";
 import { View } from "react-native";
 
-const Home = () => {
+const About = () => {
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>Home screen</Text>
-      <Link href="/about">
+      <Text>About screen</Text>
+      <Link href="/">
         <Text style={{ fontSize: 20, textDecorationLine: "underline" }}>
-          Go to About screen
+          Go to Home screen
         </Text>
       </Link>
     </View>
   );
 };
 
-export default Home;
+export default About;
