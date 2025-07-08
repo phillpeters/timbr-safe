@@ -7,7 +7,7 @@ interface CustomTextProps extends TextProps {
 
 export function Text({ children, style, ...props }: CustomTextProps) {
   return (
-    <RNText style={[{ color: "white" }, style]} {...props}>
+    <RNText style={[{ color: "default" }, style]} {...props}>
       {children}
     </RNText>
   );

@@ -44,6 +44,25 @@ export default function TabsLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="forms"
+        options={{
+          title: "Forms",
+          tabBarIcon: ({
+            color,
+            focused,
+          }: {
+            color: string | undefined;
+            focused: boolean;
+          }) => (
+            <Ionicons
+              name={focused ? "create" : "create-outline"}
+              color={color}
+              size={24}
+            />
+          ),
+        }}
+      />
     </Tabs>
   );
 }
