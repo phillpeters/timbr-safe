@@ -1,36 +1,29 @@
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import { TouchableOpacity, View } from "react-native";
+import { Text } from "./Text";
 
-const ButtonGroup = () => {
+export default function PassFailGroup() {
   return (
     <View
       style={{
-        backgroundColor: "#ededed",
         flexDirection: "row",
-        gap: 10,
+        gap: 20,
         alignItems: "center",
         justifyContent: "space-around",
         padding: 10,
         borderRadius: 50,
-        width: 135,
+        width: 110,
       }}
     >
       <TouchableOpacity>
-        <MaterialCommunityIcons
-          name="message-reply-text"
-          size={24}
-          color="gray"
-        />
-      </TouchableOpacity>
-
-      <TouchableOpacity>
-        <MaterialCommunityIcons name="camera" size={24} color="grey" />
+        <MaterialCommunityIcons name="check" size={24} color="gray" />
       </TouchableOpacity>
       <TouchableOpacity>
-        <MaterialCommunityIcons name="flag" size={24} color="grey" />
+        <MaterialCommunityIcons name="close" size={24} color="grey" />
+      </TouchableOpacity>
+      <TouchableOpacity>
+        <Text style={{ color: "gray" }}>N/A</Text>
       </TouchableOpacity>
     </View>
   );
-};
-
-export default ButtonGroup;
+}
